@@ -1,0 +1,102 @@
+.tableHeader {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.table {
+    overflow: auto;
+
+    thead {
+        vertical-align: middle;
+        border-bottom: 1px dashed #e1e3ea;
+
+        th {
+            padding-left: 10px !important;
+            text-wrap: nowrap;
+
+            &.thId {
+                min-width: 50px;
+            }
+            &.thUser {
+                min-width: 150px;
+            }
+            &.thTitle {
+                min-width: 250px;
+            }
+            &.thText {
+                min-width: 300px;
+            }
+            &.thType {
+                min-width: 150px;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px dashed #e1e3ea !important;
+
+            td {
+                text-wrap: nowrap;
+                padding-left: 10px !important;
+            }
+        }
+    }
+
+    .linkTitle {
+        color: #3f4254;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+        transition: 0.3s;
+
+        &:hover {
+            color: #7e8299;
+        }
+    }
+
+    .artwork {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        img {
+            border-radius: 8px;
+            background: #393945;
+        }
+    }
+
+    .author {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        img {
+            background: #393945;
+            border-radius: 50%;
+        }
+    }
+
+    .attachments {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        img {
+            max-width: 32px;
+            max-height: 32px;
+            border-radius: 8px;
+        }
+    }
+}
+
+.bottomContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}

@@ -1,0 +1,88 @@
+.card {
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 12px;
+    border: 1px solid #f1f1f2;
+    background: #fff;
+    box-shadow: 0px 4px 12px 0px rgba(180, 171, 171, 0.03);
+
+    h2 {
+        margin-bottom: 0;
+
+        img {
+            transition: 0.3s;
+            cursor: pointer;
+            margin-left: 10px;
+
+            &.arrowDown {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .cardHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .editButton {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 7px 12px;
+        }
+    }
+
+    .authorDate {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .author {
+            display: flex;
+            gap: 16px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 14px;
+
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: #393945;
+            }
+
+            .name {
+                color: var(--Grey-90, #0b0b0b);
+            }
+
+            .job {
+                margin-top: 8px;
+                color: var(--Gray-Gray-600, #7e8299);
+            }
+        }
+
+        .date {
+            color: var(--Gray-Gray-600, #7e8299);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 22px;
+        }
+    }
+
+    .description {
+        margin-top: 20px;
+        color: var(--Gray-Gray-800, #3f4254);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+    }
+}
+
+.bottomContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}

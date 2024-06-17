@@ -1,0 +1,68 @@
+.wrapper {
+    gap: 20px;
+    padding-bottom: 5px;
+    display: flex;
+
+    @media (max-width: 700px) {
+        display: grid;
+        grid-template-columns: 150px;
+    }
+
+    .role {
+        ul {
+            width: 150px;
+            z-index: 50;
+        }
+    }
+
+    .accountStatus {
+        text-wrap: nowrap;
+
+        ul {
+            width: 150px;
+            z-index: 50;
+        }
+    }
+
+    .verification {
+        text-wrap: nowrap;
+
+        ul {
+            width: 175px;
+            z-index: 50;
+        }
+    }
+
+    .location {
+        ul {
+            width: 150px;
+            z-index: 50;
+        }
+    }
+
+    .isUserExpertSelect {
+        ul {
+            width: 150px;
+            z-index: 50;
+        }
+    }
+
+    .newUserButton {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        justify-content: center;
+        padding: 9px 12px;
+        font-weight: 500;
+        text-wrap: nowrap;
+
+        .plus {
+            width: 17px;
+            height: 17px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #3e98ff60;
+        }
+    }
+}

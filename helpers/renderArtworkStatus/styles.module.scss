@@ -1,0 +1,29 @@
+.status {
+    border-radius: 4px;
+    padding: 7px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    display: inline;
+
+    &.available {
+        color: #7239ea;
+        background: #f8f5ff;
+    }
+    &.sold {
+        color: #50cd89;
+        background: #e8fff3;
+    }
+    &.inProgress {
+        color: #3E97FF;
+        background: #EEF6FF;
+    }
+    &.delivery {
+        color: #3e97ff;
+        background: #eef6ff;
+    }
+    &.notSelling {
+        color: #F1416C;
+        background: #FFF5F8;
+    }
+}

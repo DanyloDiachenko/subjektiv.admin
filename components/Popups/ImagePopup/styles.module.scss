@@ -1,0 +1,80 @@
+.popupBg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.popup {
+    max-width: 600px;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: 0;
+    z-index: 1000;
+    background: #fff;
+    position: fixed;
+    border-radius: 12px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+
+    .header {
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #e1e3ea;
+
+        .title {
+            color: #3f4254;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 18px;
+            letter-spacing: -0.18px;
+        }
+
+        .buttonClose {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 3px;
+        }
+    }
+
+    .body {
+        flex: 1;
+        overflow-y: auto;
+        padding: 30px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .bottom {
+        border-top: 1px solid #e1e3ea;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .error {
+            color: #ff0000;
+            font-size: 12px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            button {
+                max-width: 103px;
+            }
+        }
+    }
+}

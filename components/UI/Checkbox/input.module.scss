@@ -1,0 +1,18 @@
+.errorMessage {
+    color: #ff0000;
+    margin-top: 5px;
+}
+.checkboxWrapper{
+    display: flex;
+    align-items:center;
+    gap: 12px;
+    .checkbox{
+        cursor: pointer;
+    }
+    .checkboxLabel{
+        color: #5E6278;
+        font-size: 13px;
+        font-weight: 600;
+        word-wrap: break-word
+    }
+}

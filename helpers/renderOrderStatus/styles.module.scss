@@ -1,0 +1,37 @@
+.status {
+    padding: 7px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 12px;
+    display: inline;
+    text-wrap: nowrap;
+
+    &.successful {
+        color: #50cd89;
+        background: #e8fff3;
+    }
+    &.paid {
+        color: #7239ea;
+        background: var(--Info-Info-Light, #e9e0ff);
+    }
+    &.delivering {
+        color: #f6bd00;
+        background: #fff8dd;
+    }
+    &.proceed {
+        color: #ff6600;
+        background: #fff6d4;
+    }
+    &.canceled {
+        color: #f1416c;
+        background: #fff5f8;
+    }
+    &.pending {
+        color: #002fff;
+        background: var(--Info-Info-Light, rgb(233, 235, 255));
+    }
+    &.placed {
+        color: #5e6278;
+        background: #e1e3ea;
+    }
+}

@@ -1,0 +1,48 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 5px;
+
+    @media (max-width: 600px) {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: -2;
+    }
+
+    .item {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #7e8299;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+        border-radius: 6px;
+        cursor: pointer;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        &.active {
+            background: #3e97ff;
+            color: #ffffff;
+        }
+
+        &.arrowBlocked {
+            cursor: default;
+
+            img {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .nextPage {
+        img {
+            transform: rotate(180deg);
+        }
+    }
+}

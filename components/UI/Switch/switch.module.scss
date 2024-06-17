@@ -1,0 +1,45 @@
+$toggle-width: 42px;
+$slider-size: 22px;
+$padding: 4px;
+
+.toogle {
+    align-items: center;
+    background-color: rgb(226, 226, 226);
+    border-radius: 30px;
+    color: #fff;
+    display: flex;
+    height: calc(#{$slider-size} + #{$padding * 3});
+    justify-content: space-around;
+    padding: $padding;
+    position: relative;
+    transition: all 0.2s ease-out;
+    width: $toggle-width;
+    cursor: pointer;
+
+    &.toogleChecked {
+        background-color: #3e97ff;
+    }
+
+    .toogleSlider {
+        background-color: #fff;
+        border-radius: 50%;
+        content: '';
+        left: 6px;
+        height: $slider-size;
+        width: $slider-size;
+        position: absolute;
+        transform: translateX(0);
+        transition: all 0.2s ease-out;
+    }
+
+    input:checked + .toogleSlider {
+        background-color: #fff;
+        transform: translateX(
+            calc(#{$toggle-width} - #{$slider-size} - #{$padding * 3})
+        );
+    }
+
+    input[type='checkbox'] {
+        display: none;
+    }
+}

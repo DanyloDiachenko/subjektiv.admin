@@ -1,0 +1,96 @@
+//
+// Theme style
+//
+
+:root {
+    --primary-blue: #3e97ff;
+    --primary-hover: #0095e8;
+}
+
+// Initialize
+@import "init";
+
+// Components
+@import "components/components";
+
+// Layout
+@import "layout/base/layout";
+@import "layout/layout";
+
+//
+@import "react-image-crop/src/ReactCrop.scss";
+
+// react-datepicker
+@import "react-datepicker/dist/react-datepicker.css";
+
+.react-datepicker-wrapper {
+    width: 100%;
+}
+
+// custom
+
+.crop-cropImageContent .ReactCrop {
+    width: fit-content;
+    height: auto;
+}
+
+.ReactCrop__child-wrapper {
+    height: auto;
+    position: relative;
+    max-width: 540px;
+    max-height: inherit;
+}
+
+.ReactCrop__child-wrapper img {
+    height: auto;
+    max-height: 400px;
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.art-moderation {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    margin-bottom: 24px;
+
+    @media (max-width: 991px) {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .content {
+        display: flex;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+        border-bottom: 1px solid #e1e3ea;
+        color: #a1a5b7;
+        gap: 16px;
+    }
+
+    .link {
+        padding-bottom: 20px;
+
+        &.active {
+            color: #3e97ff;
+            font-weight: 600;
+            border-bottom: 3px solid #3e97ff;
+            border-radius: 3px;
+        }
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}

@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="pr common-dto" type="NodeJSConfigurationType" application-parameters="common-dto" activateToolWindowBeforeRun="false" path-to-js-file="src/submodules/common-dto/.run/open_pr_page.js" working-dir="$PROJECT_DIR$">
+    <method v="2" />
+  </configuration>
+</component>

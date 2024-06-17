@@ -1,0 +1,130 @@
+.table {
+    overflow: auto;
+
+    thead {
+        vertical-align: middle;
+        border-bottom: 1px dashed #e1e3ea;
+
+        th {
+            padding-left: 10px !important;
+            text-wrap: nowrap;
+        }
+    }
+
+    .arrowContent {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        cursor: pointer;
+    }
+
+    .thArtworkId {
+        min-width: 106px;
+    }
+
+    .thArtwork {
+        min-width: 179px;
+    }
+
+    .thCategory {
+        min-width: 92px;
+    }
+
+    .thOwnerId {
+        min-width: 110px;
+    }
+
+    .thAuthorId,
+    .thPrice,
+    .thYear,
+    .thStatus {
+        min-width: 138px;
+    }
+
+    .linkTitle {
+        color: #3f4254;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+        transition: 0.3s;
+
+        &:hover {
+            color: #7e8299;
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px dashed #e1e3ea !important;
+
+            td {
+                text-wrap: nowrap;
+                padding-left: 10px !important;
+            }
+        }
+    }
+
+    .status {
+        padding: 7px;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 12px;
+
+        &.available {
+            max-width: 67px;
+            color: #50cd89;
+            background: #e8fff3;
+        }
+        &.notSelling {
+            max-width: 80px;
+            color: #f1416c;
+            background: #fff5f8;
+        }
+        &.inProgress {
+            max-width: 80px;
+            color: #3e97ff;
+            background: #eef6ff;
+        }
+    }
+}
+
+.avatarNameTd {
+    border: none !important;
+
+    a {
+        border-radius: 4px !important;
+        color: #3f4254;
+    }
+
+    img {
+        border-radius: 4px !important;
+        background: rgb(55, 55, 55);
+    }
+}
+
+.bottomContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+.avatarNameTd {
+    border: none !important;
+
+    .avatar {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50% !important;
+            background: #393945;
+        }
+    }
+}

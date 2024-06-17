@@ -1,0 +1,141 @@
+.table {
+    overflow: auto;
+
+    thead {
+        border-bottom: 1px dashed #e1e3ea;
+        &:hover {
+            .arrows {
+                opacity: 1 !important;
+            }
+        }
+
+        .arrowContent {
+            display: flex;
+            align-items: end;
+            gap: 7px;
+            position: relative;
+
+            .arrows {
+                opacity: 0;
+                transition: 0.3s;
+                position: absolute;
+                left: 40px;
+                top: -12px;
+
+                img {
+                    display: block;
+                    cursor: pointer;
+
+                    &:last-child {
+                        margin-top: -5px;
+                    }
+                }
+            }
+        }
+
+        th {
+            padding-left: 10px !important;
+        }
+    }
+    /* background: #393945a2; */
+
+    .thUserId {
+        min-width: 105px;
+    }
+
+    .thUserUser {
+        min-width: 222px;
+    }
+
+    .thUserName {
+        min-width: 138px;
+    }
+
+    .thUserEmail {
+        min-width: 179px;
+    }
+
+    .thUserRole {
+        min-width: 91px;
+    }
+
+    .thUserAccountStatus {
+        min-width: 136px;
+    }
+
+    .thUserLocation {
+        min-width: 156px;
+    }
+
+    .thUserRegister {
+        min-width: 173px;
+    }
+
+    .linkTitle {
+        color: #3f4254;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px dashed #e1e3ea !important;
+
+            td {
+                text-wrap: nowrap;
+                padding-left: 10px !important;
+            }
+        }
+    }
+
+    .accountStatus {
+        padding: 7px;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 12px;
+
+        &.active {
+            color: #50cd89;
+            background: #e8fff3;
+        }
+        &.blocked {
+            color: #f1416c;
+            background: #fff5f8;
+        }
+    }
+}
+
+.avatarNameTd {
+    border: none !important;
+
+    .avatar {
+        width: auto !important;
+        height: auto !important;
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+.bottomContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+
+    @media (max-width: 1120px) {
+        display: grid;
+        grid-template-columns: 100px auto;
+    }
+    @media (max-width: 600px) {
+        grid-template-columns: 100px auto;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 20px;
+    }
+}

@@ -1,0 +1,18 @@
+.forgorPasswordLink {
+    font-weight: 600;
+    color: var(--primary-blue);
+    transition: color 0.3s;
+
+    &:hover {
+        color: var(--primary-hover) !important;
+    }
+}
+
+.inputEmpty {
+    border: 1px solid #ff0000 !important;
+}
+
+.errorMessage {
+    color: #ff0000;
+    margin-top: 5px;
+}

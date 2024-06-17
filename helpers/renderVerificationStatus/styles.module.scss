@@ -1,0 +1,28 @@
+.status {
+    padding: 7px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 12px;
+    display: inline;
+
+
+    &.verified {
+        color: #50cd89;
+        background: #e8fff3;
+    }
+
+    &.notVerified {
+        color: #7239ea;
+        background: var(--Info-Info-Light, #e9e0ff);
+    }
+    &.verifying {
+        color: #f67700;
+        background: #fff6d4;
+    }
+    &.faild {
+        color: #f1416c;
+        background: #fff5f8;
+    }
+
+
+}

@@ -1,0 +1,21 @@
+.status {
+    border-radius: 4px;
+    padding: 7px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    display: inline;
+
+    &.available {
+        color: #50cd89;
+        background: #e8fff3;
+    }
+    &.created {
+        color: #3e97ff;
+        background: #eef6ff;
+    }
+    &.canceled {
+        color: #f1416c;
+        background: #fff5f8;
+    }
+}

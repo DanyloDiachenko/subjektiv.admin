@@ -1,0 +1,93 @@
+.tableWrapper {
+    padding-top: 30px;
+    overflow: auto;
+
+    .table {
+        margin-bottom: 0;
+
+        thead {
+            border-bottom: 1px dashed #e1e3ea;
+
+            tr {
+                vertical-align: middle;
+
+                th {
+                    padding: 10px 0 10px 10px;
+                    font-size: 12px;
+                    line-height: 12px;
+                }
+
+                .name,
+                .status,
+                .author,
+                .price {
+                    min-width: 183px;
+                }
+                .category {
+                    min-width: 122px;
+                }
+            }
+        }
+
+        tbody {
+            .titleAvailable,
+            .titleBlocked {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 14px;
+            }
+
+            .titleAvailable {
+                color: #3f4254;
+                cursor: pointer;
+            }
+
+            .titleBlocked {
+                color: #7e8299;
+            }
+
+            tr {
+                border-bottom: 1px dashed #e1e3ea;
+
+                td {
+                    padding: 10px 0 10px 10px;
+                }
+
+                .nameTd {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        text-wrap: nowrap;
+
+                        img {
+                            border-radius: 6px;
+                        }
+                    }
+                }
+
+                .author {
+                    text-wrap: nowrap;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .sendRequestTd {
+                    .button {
+                        width: auto;
+                        color: #a1a5b7;
+                        font-size: 12px;
+                        padding: 9px 12px;
+                    }
+                }
+            }
+        }
+    }
+}

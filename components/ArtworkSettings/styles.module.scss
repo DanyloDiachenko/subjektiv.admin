@@ -1,0 +1,27 @@
+.tabTitle {
+    color: #A1A5B7;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+cursor: pointer;
+padding-bottom: 20px;
+border-bottom: 3px solid transparent;
+&.active{
+    color:#3E97FF;
+    font-weight: 600;
+    border-bottom: 3px solid #3E97FF;   
+}
+&:hover{
+    color:#3E97FF;
+    font-weight: 600;
+    border-bottom: 3px solid #3E97FF;
+}
+}
+
+
+.tabBorder{
+    border-bottom: 1px solid #E1E3EA;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 24px;
+}

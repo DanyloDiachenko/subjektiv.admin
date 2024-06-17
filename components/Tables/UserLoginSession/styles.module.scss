@@ -1,0 +1,107 @@
+.tableWrapper {
+    margin-top: 30px;
+    overflow: auto;
+
+    .table {
+        margin-bottom: 0;
+
+        thead {
+            border-bottom: 1px dashed #e1e3ea;
+
+            tr {
+                vertical-align: middle;
+
+                th {
+                    padding: 19px 0 19px 10px;
+                    font-size: 12px;
+                    line-height: 12px;
+                }
+
+                .nameArtwork {
+                    min-width: 181px;
+                }
+                .category {
+                    min-width: 76px;
+                }
+                .status {
+                    min-width: 116px;
+                }
+                .owner {
+                    min-width: 164px;
+                }
+                .price {
+                    min-width: 116px;
+                }
+                .purchaseRequests {
+                    width: 80px;
+                }
+                .confirmStatus {
+                    width: 122px;
+                }
+            }
+        }
+
+        tbody {
+            .titleAvailable,
+            .titleBlocked {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 14px;
+            }
+
+            .titleAvailable {
+                color: #3f4254;
+                cursor: pointer;
+            }
+
+            .titleBlocked {
+                color: #7e8299;
+            }
+
+            tr {
+                border-bottom: 1px dashed #e1e3ea;
+
+                td {
+                    padding: 19px 0 19px 10px;
+                    font-size: 14px;
+                 
+                    line-height: 14px;
+                }
+
+      .status {
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 600;
+        .success {
+            background:#E8FFF3;
+            padding: 7px;
+            border-radius:4px;
+            color: #50CD89;
+
+  
+        }
+        .error {
+            background:#FFF5F8;
+            padding: 7px;
+            border-radius:4px;
+            color: #F1416C;
+  
+
+
+        }
+      }
+               
+
+                .sendRequestTd {
+                    .button {
+                        width: auto;
+                        white-space: nowrap;
+                        color: #a1a5b7;
+                        font-size: 12px;
+                        padding: 9px 12px;
+                    }
+                }
+            }
+        }
+    }
+}

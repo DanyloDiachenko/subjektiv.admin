@@ -1,0 +1,43 @@
+.wrapper {
+    gap: 20px;
+
+    .price,
+    .year,
+    .category {
+        ul {
+            width: 150px;
+        }
+    }
+
+    .artworkStatus {
+        text-wrap: nowrap;
+
+        ul {
+            width: 200px;
+        }
+    }
+
+    .newArtworkButton {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        justify-content: center;
+        padding: 9px 12px;
+        font-weight: 500;
+
+        &.inactive {
+            background: #f9f9f9;
+            color: #7e8299;
+            cursor: default;
+
+            img {
+                display: none;
+            }
+
+            &:hover {
+                background: #f9f9f9 !important;
+                color: #7e8299 !important;
+            }
+        }
+    }
+}

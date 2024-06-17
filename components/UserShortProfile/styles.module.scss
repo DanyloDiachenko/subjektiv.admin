@@ -1,0 +1,43 @@
+.card {
+    .roleAndStatusBlock{
+        display: flex;
+        flex-direction: column;
+        gap:12px;
+    }
+    .role {
+        color: #3e97ff;
+        background: #eef6ff;
+        font-size: 12px;
+        padding: 4px;
+        text-align: center;
+        border-radius:4px;
+        font-weight:500
+    }
+
+    .characteristics {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 13px;
+
+        .item {
+            padding: 10px;
+            border: 1px dashed #e1e3ea;
+
+            .value {
+                color: #181c32;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 16px;
+            }
+
+            .description {
+                margin-top: 7px;
+                color: #a1a5b7;
+                font-size: 12px;
+                font-weight: 600;
+                line-height: 12px;
+            }
+        }
+    }
+}

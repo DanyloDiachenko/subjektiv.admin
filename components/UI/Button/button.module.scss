@@ -1,0 +1,34 @@
+.button {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 6px;
+    border: none;
+    transition: background 0.3s;
+
+    &.buttonBlue {
+        color: var(--whites-white-100, #fff);
+        background: var(--primary-primary, #3e97ff);
+
+        &:hover {
+            background: var(--primary-hover) !important;
+        }
+    }
+
+    &.buttonGrey {
+        color: var(--gray-gray-600, #7e8299);
+        background: var(--gray-gray-200, #f1f1f2);
+    }
+
+    &.buttonLightBlue {
+        background: #eef6ff;
+        color: #3e97ff;
+    }
+    &.buttonRed {
+        background: var(--Danger-Danger-Active, #d9214e);
+        color: #ffffff;
+    }
+}

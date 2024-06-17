@@ -1,0 +1,132 @@
+.tableWrapper {
+    padding-top: 30px;
+    overflow-x: auto;
+
+    .table {
+        margin-bottom: 0;
+
+        thead {
+            border-bottom: 1px dashed #e1e3ea;
+
+            tr {
+                vertical-align: middle;
+
+                th {
+                    padding: 10px 0 10px 10px !important;
+                    font-size: 12px;
+                    line-height: 12px;
+                }
+
+                .image,
+                .dimesion,
+                .size {
+                    min-width: 137px;
+                }
+                .type {
+                    min-width: 95px;
+                }
+                .modified {
+                    min-width: 190px;
+                }
+            }
+        }
+
+        tbody {
+            text-wrap: nowrap;
+
+            .titleAvailable,
+            .titleBlocked {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 14px;
+            }
+
+            .titleAvailable {
+                color: #3f4254;
+                cursor: pointer;
+            }
+
+            .titleBlocked {
+                color: #7e8299;
+            }
+
+            tr {
+                border-bottom: 1px dashed #e1e3ea;
+
+                td {
+                    padding: 10px 0 10px 10px !important;
+                }
+
+                .imageTd {
+                    div {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+
+                        img {
+                            border-radius: 6px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .statusTd {
+                    .status {
+                        border-radius: 4px;
+                        padding: 7px;
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 12px;
+
+                        &.available {
+                            max-width: 67px;
+                            color: #7239ea;
+                            background: #f8f5ff;
+                        }
+                        &.sold {
+                            max-width: 40px;
+                            color: #50cd89;
+                            background: #e8fff3;
+                        }
+                        &.inProgress {
+                            max-width: 80px;
+                            color: #f6c000;
+                            background: #fff8dd;
+                        }
+                        &.delivery {
+                            max-width: 62px;
+                            color: #3e97ff;
+                            background: #eef6ff;
+                        }
+                        &.notSelling {
+                            max-width: 76px;
+                            color: #5e6278;
+                            background: #f1f1f2;
+                        }
+                    }
+                }
+
+                .owner {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .actionsTd {
+                    .button {
+                        width: auto;
+                        color: #a1a5b7;
+                        font-size: 12px;
+                        padding: 9px 12px;
+                    }
+                }
+            }
+        }
+    }
+}

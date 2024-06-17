@@ -1,0 +1,183 @@
+@import '~stream-chat-react/dist/scss/v2/index.scss';
+@import '~stream-chat-react/dist/scss/v2/ChannelList/ChannelList-layout.scss';
+@import '~stream-chat-react/dist/scss/v2/ChannelList/ChannelList-theme.scss';
+@import '~stream-chat-react/dist/scss/v2/ChannelPreview/ChannelPreview-layout.scss';
+@import '~stream-chat-react/dist/scss/v2/ChannelPreview/ChannelPreview-theme.scss';
+.chat-messaging {
+    //@apply flex h-screen  w-full;
+    display: flex;
+    height: calc(100vh - 70px);
+    width: 100%;
+    background: #f7f8fb;
+    .str-chat {
+        --str-chat__channel-list-background-color: #f7f8fb;
+        --str-chat__message-list-background-color: #f7f8fb;
+        --str-chat__channel-header-background-color: #f7f8fb;
+        --str-chat__primary-color: #3f4254;
+        --str-chat__active-primary-color: #004d40;
+        //--str-chat__surface-color: rgba(255, 255, 255, 0.05);
+        //--str-chat__secondary-surface-color: #3f4254;
+        --str-chat__primary-surface-color: #3f4254;
+        --str-chat__own-message-bubble-color: #f7f8fb;
+        //--str-chat__primary-surface-color-low-emphasis: rgba(
+        //    255,
+        //    255,
+        //    255,
+        //    0.6
+        //);
+        //--str-chat__channel-preview-unread-badge-background-color: rgba(
+        //    255,
+        //    255,
+        //    255,
+        //    0.2
+        //);
+        --str-chat__border-radius-circle: 100%;
+        --str-chat__channel-header-border-block-end: 1px solid
+            rgba(97, 97, 97, 0.25);
+        --str-chat__channel-preview-border-radius: 8px;
+        //--str-chat__message-link-color: rgba(0, 0, 0, 0.6);
+        &__message-attachment-card--title {
+            //@apply text-primary-black-100;
+            color: #f7f8fb;
+        }
+        &__channel {
+            //@apply w-full;
+            width: 100%;
+            //height: 100vh;
+        }
+        &__channel-header {
+            //@apply ps-8;
+            padding-left: 32px;
+            border-top: 1px solid rgba(97, 97, 97, 0.25);
+            p {
+                max-width: 300px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        &__channel-list {
+            //@apply h-full p-4;
+            height: calc(100% - 94px);
+            padding: 16px;
+        }
+        //empty-channel
+        --str-chat__channel-background-color: #f7f8fb;
+        &__empty-channel {
+            //svg {
+            //    display: none;
+            //}
+            //background: url('/image/empty-chat.png') 50% no-repeat;
+        }
+        &__empty-channel-text {
+            //display: none;
+        }
+
+        //input
+        --str-chat__message-input-background-color: #F7F8FBF7F8FB;
+        --str-chat__message-textarea-background-color: white;
+        --str-chat__message-textarea-border-radius: 8px;
+        &__message-textarea-with-emoji-picker {
+            padding: 0 !important;
+        }
+        &__message-input {
+            //@apply py-6 px-[25.5px];
+            padding: 24px 25.5px;
+        }
+        &__message-textarea-container {
+            //@apply py-3 pe-16 ps-12;
+            padding: 12px 64px 12px 48px;
+            //padding: var(--str-chat__spacing-6) var(--str-chat__spacing-6) !important;
+        }
+
+        //addFile
+        &__file-input-container {
+            //@apply absolute left-6;
+            position: absolute;
+            left: 24px;
+        }
+        &__file-input-label {
+            //svg {
+            //    display: none;
+            //}
+            //background: url('/image/Paperclip.png') 50% no-repeat;
+            //height: 44px;
+            //width: 44px;
+        }
+        //send_btn
+        --str-chat__message-send-background-color: #131313;
+        --str-chat__message-send-disabled-background-color: #3f4254;
+        --str-chat__message-send-border-radius: 8px;
+        &__send-button {
+            //@apply px-2 py-1 absolute right-10 max-h-[28px] w-[51px] text-white capitalize;
+            padding: 4px 8px;
+            position: absolute;
+            right: 40px;
+            max-height: 28px;
+            width: 51px;
+            color: white;
+            text-transform: capitalize;
+            &:disabled {
+                color: rgba(255, 255, 255, 0.2);
+            }
+        }
+        &__channel-search--inline {
+            @apply min-h-[62px];
+            min-height: 62px;
+        }
+        &__channel-search-bar-button--exit-search {
+            display: none;
+        }
+    }
+    //search
+    .str-chat__channel-search.str-chat__channel-search--with-results.str-chat__channel-search--inline {
+        height: auto;
+    }
+
+    &_chanelList {
+        //height: calc(100vh - 164.285px);
+        min-width: 404px;
+        @media (max-width: 768px) {
+            width: 0;
+            min-width: 0;
+            transition: all 300ms ease-in-out;
+            &.chanelList__openMob {
+                width: 100vw;
+                min-width: 100vw;
+                transition: all 300ms ease-in-out;
+            }
+        }
+        &__header {
+            position: relative;
+        }
+
+        &__btn-open {
+            position: absolute;
+            top: 18px;
+            z-index: 10;
+            svg path {
+                fill: #898989;
+            }
+            @media (min-width: 768px) {
+                display: none;
+            }
+            &.close-list {
+                right: -1.5rem /* -24px */;
+            }
+            &.open-list {
+                right: 0.5rem /* 8px */;
+                svg {
+                    rotate: 180deg;
+                }
+            }
+        }
+        &__title {
+            margin: 0;
+            padding: 16px 56px 17.5px;
+            font-size: 1.25rem /* 20px */;
+            color: black;
+            border-top: 1px solid rgba(97, 97, 97, 0.25);
+            border-bottom: 1px solid rgba(97, 97, 97, 0.25);
+            border-right: 1px solid rgba(97, 97, 97, 0.25);
+        }
+    }
+}

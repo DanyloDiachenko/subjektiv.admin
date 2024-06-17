@@ -1,0 +1,74 @@
+.selectWrapper {
+    position: relative;
+    margin-top: 8px;
+
+    .selectContent {
+        border-radius: 6px;
+        background: #f1f1f2;
+        padding: 13px 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+		cursor: pointer;
+        height: 40px;
+        &.error{
+            border: 1px solid #ff0000;
+        }
+
+        .activeSelect {
+            color: #3f4254;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 14px;
+      
+        }
+        .inputPlaceholder {
+            color: #7E8299;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 14px;
+            word-wrap: break-word
+        }
+    }
+
+
+    .variants {
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 43px;
+        border-radius: 12px;
+        border: 1px solid #f1f1f2;
+        background: #fff;
+        box-shadow: 0px 8px 14px 0px rgba(15, 42, 81, 0.04);
+        list-style: none;
+        padding: 10px 5px;
+        max-height: 200px;
+        overflow-y: auto;
+        z-index: 1;
+        &.open{
+            display: block;
+        }
+        &.close{
+            display: none;
+        }
+
+        li {
+            padding: 10px 15px;
+            cursor: pointer;
+            color: #7e8299;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 14px;
+            &:hover{
+        
+                background: rgb(243, 242, 242);
+            }
+        }
+
+    }
+}
+.errorMessage {
+    color: #ff0000;
+    margin-top: 5px;
+}

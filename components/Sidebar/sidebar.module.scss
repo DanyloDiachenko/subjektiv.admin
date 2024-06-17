@@ -1,0 +1,123 @@
+.sidebar {
+    background: #131313;
+    overflow: hidden;
+    max-width: 265px;
+
+    @media (max-width: 991px) {
+        position: absolute;
+        display: block;
+        min-height: 100%;
+        left: -400px;
+        transition: 0.6s;
+        overflow-y: auto;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+
+        &.opened {
+            left: 0;
+        }
+    }
+
+    .topContent {
+        position: relative;
+        border-bottom: 1px dashed #393945;
+        height: 71px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        flex-shrink: 0;
+
+        .buttonSidebarMenu {
+            background: #f1f1f2;
+        }
+    }
+
+    .menuContent {
+        padding-left: 25px;
+        padding-right: 25px;
+
+        .linkAdditional {
+            color: #5e6278;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 26px;
+        }
+
+        .menuItem,
+        .menuContent,
+        .menuItemAccordion,
+        .menuLink {
+            padding: 0;
+        }
+
+        .menuItem {
+            margin-top: 20px;
+            font-size: 13px !important;
+        }
+
+        .menuItemAccordion {
+            .menuLink {
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                .menuIcon {
+                    opacity: 0.7;
+                }
+
+                &:hover {
+                    .menuArrow {
+                        &::after {
+                            background: #ffffff;
+                        }
+                    }
+                    .menuTitle {
+                        color: #ffffff;
+                    }
+                    .menuIcon {
+                        opacity: 1;
+                    }
+                }
+
+                .menuTitle {
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: #e1e3ea;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.wrapper {
+    display: grid !important;
+    grid-template-rows: 0fr;
+    transition: 0.3s;
+    overflow: hidden;
+
+    &.show {
+        grid-template-rows: 1fr;
+    }
+
+    .linksWrapper {
+        min-height: 0;
+    }
+}
+
+.menuItemLink {
+    transition: 0.3s !important;
+    border-radius: 8px;
+
+    &:hover {
+        background: #2a2a2a;
+    }
+
+    &.menuItemLinkActive {
+        background: #2a2a2a;
+
+        .linkAdditional {
+            color: #ffffff;
+        }
+    }
+}

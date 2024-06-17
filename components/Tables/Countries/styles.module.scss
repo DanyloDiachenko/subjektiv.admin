@@ -1,0 +1,79 @@
+.table {
+    overflow: auto;
+
+    thead {
+        border-bottom: 1px dashed #e1e3ea;
+
+        th {
+            padding-left: 10px !important;
+        }
+    }
+
+    .thCountryId {
+        min-width: 105px;
+    }
+    .thCountryTitle {
+        min-width: 250px;
+    }
+    .thCountryFlag {
+        min-width: 105px;
+    }
+
+    .linkTitle {
+        color: #3f4254;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px dashed #e1e3ea !important;
+
+            td {
+                text-wrap: nowrap;
+                padding-left: 10px !important;
+            }
+        }
+    }
+}
+
+.avatarNameTd {
+    border: none !important;
+}
+
+.bottomContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+.newCountryWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .newCountryButton {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        justify-content: center;
+        padding: 9px 12px;
+        font-weight: 500;
+        max-width: 150px;
+
+        .plus {
+            width: 17px;
+            height: 17px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #3e98ff60;
+        }
+    }
+}

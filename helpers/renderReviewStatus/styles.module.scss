@@ -1,0 +1,17 @@
+.status {
+    border-radius: 4px;
+    padding: 7px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    display: inline;
+
+    &.published {
+        color: #50cd89;
+        background: #e8fff3;
+    }
+    &.wait {
+        color: #f6c000;
+        background: #fff8dd;
+    }
+}

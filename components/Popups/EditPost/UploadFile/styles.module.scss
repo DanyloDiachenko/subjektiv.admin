@@ -1,0 +1,12 @@
+.add {
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+    border: 1px dashed var(--gray-gray-500, #a1a5b7);
+    color: #a1a5b7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    cursor: pointer;
+}

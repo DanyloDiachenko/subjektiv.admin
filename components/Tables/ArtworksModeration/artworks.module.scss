@@ -1,0 +1,150 @@
+.table {
+    overflow: auto;
+
+    thead {
+        vertical-align: middle;
+        border-bottom: 1px dashed #e1e3ea;
+
+        th {
+            padding-left: 10px !important;
+        }
+    }
+
+    .thCheckbox {
+        min-width: 52px;
+
+        input {
+            width: 20px;
+            height: 20px;
+            border-radius: 6px;
+            background: #f1f1f2;
+        }
+    }
+
+    .thArtworkId {
+        min-width: 106px;
+    }
+
+    .thArtwork {
+        min-width: 179px;
+    }
+
+    .thCategory {
+        min-width: 92px;
+    }
+
+    .thOwnerId {
+        min-width: 110px;
+    }
+
+    .thAuthorId,
+    .thPrice,
+    .thYear,
+    .thStatus {
+        min-width: 138px;
+    }
+
+    .thDateSubmission {
+        min-width: 202px;
+    }
+
+    .thModerationStatus {
+        min-width: 149px;
+    }
+
+    .thLastActivity {
+        min-width: 171px;
+    }
+
+    .linkTitle {
+        color: #3f4254;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+        cursor: pointer;
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px dashed #e1e3ea !important;
+
+            td {
+                text-wrap: nowrap;
+                padding-left: 10px !important;
+            }
+        }
+    }
+
+    .status {
+        padding: 7px;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 12px;
+        display: inline;
+
+        &.approved {
+            color: #50cd89;
+            background: #e8fff3;
+        }
+        &.rejected {
+            color: #f1416c;
+            background: #fff5f8;
+        }
+        &.pending {
+            color: #3e97ff;
+            background: #eef6ff;
+        }
+        .notPublic {
+            color: #fff8dd;
+            background: #f6c000;
+        }
+    }
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    background: #f1f1f2;
+}
+
+.avatarNameTd {
+    border: none !important;
+
+    a {
+        border-radius: 4px !important;
+        color: #3f4254;
+    }
+
+    img {
+        border-radius: 4px !important;
+        background: rgb(55, 55, 55);
+    }
+}
+
+.bottomContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+.avatarNameTd {
+    border: none !important;
+
+    .avatar {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50% !important;
+            background: #393945;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.cardHeader {
+    .selectors {
+        display: flex;
+        justify-content: start !important;
+        gap: 20px;
+
+        .input {
+            max-width: 100px;
+            border-radius: 6px;
+            background: #f1f1f2 !important;
+            padding: 13px 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            height: 40px;
+            border: none;
+            margin-top: 8px;
+
+            &::placeholder {
+                color: #afafaf;
+                font-weight: 600;
+            }
+        }
+    }
+
+    button {
+        max-width: 150px;
+    }
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 10px;
+}

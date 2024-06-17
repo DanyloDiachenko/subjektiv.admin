@@ -1,0 +1,136 @@
+.table {
+    overflow: auto;
+
+    thead {
+        border-bottom: 1px dashed #e1e3ea;
+
+        th {
+            padding-left: 10px !important;
+        }
+
+        .thId {
+            text-wrap: nowrap;
+        }
+
+        .thCheckbox {
+            min-width: 52px;
+
+            input {
+                width: 20px;
+                height: 20px;
+                border-radius: 6px;
+                background: #f1f1f2;
+            }
+        }
+    }
+
+    .arrowContent {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        cursor: pointer;
+    }
+
+    .orderId,
+    .buyer,
+    .seller {
+        color: #3f4254 !important;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+        word-wrap: break-word;
+    }
+
+    .linkTitle {
+        color: #3f4254;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px dashed #e1e3ea !important;
+
+            td {
+                text-wrap: nowrap;
+                border: none !important;
+                padding-left: 10px !important;
+            }
+        }
+    }
+
+    .checkbox {
+        width: 20px;
+        height: 20px;
+        border-radius: 6px;
+        background: #f1f1f2;
+    }
+
+    .actionsTd {
+        position: relative;
+    }
+    .actionsBtn {
+        padding: 10px;
+        color: #7e8299;
+        background-color: #f1f1f2;
+        width: fit-content;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        border-radius: 6px;
+        font-size: 10px;
+        cursor: pointer;
+    }
+}
+
+.user {
+    a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #393945;
+        }
+    }
+}
+
+.actionPopup {
+    position: absolute;
+    right: 7px;
+    top: 55px;
+    border-radius: 12px;
+    border: 1px solid #f1f1f2;
+    background: #fff;
+    box-shadow: 0px 8px 14px 0px rgba(15, 42, 81, 0.04);
+    list-style: none;
+    padding: 10px 5px;
+    z-index: 100;
+    width: 100%;
+    li {
+        padding: 10px 15px;
+        cursor: pointer;
+        color: #7e8299;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+        &:hover {
+            background: #eef6ff;
+            color: #3e97ff;
+        }
+    }
+}
+
+.bottomContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}

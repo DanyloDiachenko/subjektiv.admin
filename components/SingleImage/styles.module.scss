@@ -1,0 +1,49 @@
+.inputTitle {
+    color: var(--Gray-Gray-700, #5e6278);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 14px;
+}
+
+.avatar {
+    .image {
+        margin-top: 12px;
+        position: relative;
+        width: 90px;
+        height: 90px;
+
+        .userImage {
+            width: 90px;
+            height: 90px;
+            border-radius: 100px;
+        }
+
+        .imageButton {
+            position: absolute;
+            border-radius: 60px;
+            background: #fff;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            padding: 7px;
+            z-index: 1;
+            border: none;
+            cursor: pointer;
+            left: 64px;
+
+            &.editButton {
+                top: 3px;
+            }
+            &.clearButton {
+                bottom: 3px;
+            }
+        }
+    }
+
+    .imageParagraph {
+        margin-top: 15px;
+        color: #a1a5b7;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 10px;
+        letter-spacing: -0.3px;
+    }
+}

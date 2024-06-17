@@ -1,0 +1,47 @@
+.selectWrapper {
+    width: 200px;
+
+    ul {
+        width: 200px;
+    }
+
+    div {
+        span {
+            img {
+                display: none;
+            }
+        }
+    }
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    column-gap: 20px;
+    padding-bottom: 13px;
+
+    .label {
+        color: #a1a5b7;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 14px;
+    }
+
+    .value {
+        color: #3f4254aa;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+    }
+}
+
+.submit {
+    margin-top: 10px;
+    max-width: 200px;
+}
+
+.error {
+    color: red;
+    margin-top: 7px;
+}

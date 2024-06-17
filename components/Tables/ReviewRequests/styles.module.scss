@@ -1,0 +1,68 @@
+.tableWrapper {
+    padding-top: 30px;
+    overflow-x: auto;
+
+    .table {
+        margin-bottom: 0;
+        color: var(--Gray-Gray-500, #a1a5b7);
+
+        thead {
+            border-bottom: 1px dashed #e1e3ea;
+
+            tr {
+                vertical-align: middle;
+
+                th {
+                    padding: 10px 0 10px 10px !important;
+                    font-size: 12px;
+                    line-height: 12px;
+
+                    &.thExpert {
+                        min-width: 384px;
+                    }
+                    &.thDate,
+                    &.thAssign,
+                    &.thAction {
+                        min-width: 138px;
+                    }
+                }
+            }
+        }
+
+        tbody {
+            text-wrap: nowrap;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 14px;
+
+            .expertTd {
+                a {
+                    color: var(--Gray-Gray-800, #3f4254);
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                }
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background: #393945;
+                }
+            }
+
+            .button {
+                width: auto;
+                padding: 9px 12px;
+            }
+
+            .approved {
+                display: inline;
+                width: auto;
+                padding: 7px 10px;
+                color: #50cd89;
+                background: #e8fff3;
+            }
+        }
+    }
+}

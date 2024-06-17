@@ -1,0 +1,47 @@
+.card {
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 12px;
+    border: 1px solid #f1f1f2;
+    background: #fff;
+    box-shadow: 0px 4px 12px 0px rgba(180, 171, 171, 0.03);
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+    .cardHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .leftColumn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                transition: 0.3s;
+                cursor: pointer;
+
+                &.arrowDown {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .editButton {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 7px 12px;
+        }
+    }
+
+    .bottomContent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+}
